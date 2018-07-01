@@ -1,5 +1,11 @@
 <h1>Result Page</h1>
 
-<% data.results.forEach(function(movie){ %>
-<li> <%= movie.name %> </li>
-<% }) %>
+<ul>
+    <% data.results.forEach(function(movie){ %>
+        <li> 
+            <%= movie.name %> - <strong><%= movie.id %> </strong>
+        </li>
+    <% }) %>
+</ul>
+
+<a href="/">Search</a>
